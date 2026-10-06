@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Domaine Sans Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/DomaineSansText-Regular.otf') format('opentype');
+}
+
+@theme {
+  --font-display: 'Domaine Sans Text', 'Montserrat', sans-serif;
+  --font-body: 'Lato', sans-serif;
+
+  --color-ob-black: #0A0A0A;
+  --color-ob-void: #060606;
+  --color-ob-dark: #141414;
+  --color-ob-surface: #1C1C1C;
+  --color-ob-muted: #2A2A2A;
+  --color-ob-border: #2E2E2E;
+  --color-ob-white: #FFFFFF;
+  --color-ob-cream: #F5F0E8;
+  --color-ob-gold: #C9A96E;
+  --color-ob-gold-light: #E2C68A;
+  --color-ob-wine: #4A0D1F;
+  --color-ob-wine-deep: #2D0812;
+  --color-ob-navy: #0D2545;
+  --color-ob-plum: #3D1245;
+  --color-ob-text-dim: rgba(255,255,255,0.55);
+}
+
+html, body {
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* hide scrollbar while keeping scroll */
+::-webkit-scrollbar { width: 0; height: 0; }
